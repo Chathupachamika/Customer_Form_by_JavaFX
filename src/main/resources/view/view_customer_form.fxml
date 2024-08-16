@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewCustomerFormController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#05335b" height="73.0" layoutX="-8.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="608.0" />
+        <Label layoutX="117.0" layoutY="4.0" text="View Customer Form" textFill="#e7e1e1">
+            <font>
+                <Font name="Bell MT Bold" size="41.0" />
+            </font>
+        </Label>
+        <JFXButton layoutX="359.0" layoutY="331.0" onAction="#btnReloadOnAction" prefHeight="34.0" prefWidth="90.0" style="-fx-background-color: #4cd137;" text="Reload">
+            <font>
+                <Font name="Ubuntu Mono" size="15.0" />
+            </font>
+        </JFXButton>
+        <JFXButton layoutX="463.0" layoutY="331.0" onAction="#btnExitOnAction" prefHeight="34.0" prefWidth="89.0" style="-fx-background-color: #7f8fa6;" text="Exit">
+            <font>
+                <Font name="Ubuntu Mono" size="15.0" />
+            </font>
+        </JFXButton>
+      <TableView fx:id="tblCustomers" layoutX="23.0" layoutY="100.0" prefHeight="200.0" prefWidth="549.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="92.0" text="Id" />
+          <TableColumn fx:id="colName" prefWidth="143.20001220703125" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="167.20001220703125" text="Address" />
+            <TableColumn fx:id="colDateOfBirth" prefWidth="147.99993896484375" text="Date of Birth" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>
