@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXComboBox?>
-<?import com.jfoenix.controls.JFXTextField?>
-<?import javafx.scene.control.DatePicker?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Font?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomerFormController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomerFormController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#05335b" height="73.0" layoutX="-8.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="608.0" />
       <Label layoutX="117.0" layoutY="4.0" text="Add Customer Form" textFill="#e7e1e1">
@@ -17,11 +14,20 @@
             <Font name="Bell MT Bold" size="41.0" />
          </font>
       </Label>
-      <JFXTextField fx:id="txtId" layoutX="132.0" layoutY="116.0" promptText="Id" />
-      <JFXTextField fx:id="txtName" layoutX="132.0" layoutY="215.0" promptText="Name" />
-      <JFXTextField fx:id="txtAddress" layoutX="132.0" layoutY="271.0" promptText="Address" />
-      <DatePicker fx:id="DateDateOfBirth" layoutX="119.0" layoutY="336.0" promptText="Date of Birth" />
-      <JFXComboBox fx:id="cmbTitle" layoutX="151.0" layoutY="162.0" promptText="Mr / Mrs" />
+      <JFXTextField fx:id="txtId" layoutX="132.0" layoutY="116.0" promptText="Id">
+         <font>
+            <Font name="Wingdings 2" size="13.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtName" layoutX="132.0" layoutY="215.0" promptText="Name">
+         <font>
+            <Font name="Wingdings 2" size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtAddress" layoutX="132.0" layoutY="271.0" promptText="Address">
+         <font>
+            <Font name="Wingdings 2" size="14.0" />
+         </font></JFXTextField>
+      <DatePicker fx:id="DateDateOfBirth" layoutX="120.0" layoutY="328.0" promptText="Date of Birth" />
+      <JFXComboBox fx:id="cmbTitle" layoutX="132.0" layoutY="161.0" prefHeight="26.0" prefWidth="110.0" promptText="Mr / Mrs" />
       <JFXButton layoutX="429.0" layoutY="284.0" onAction="#btnSearchCustomerOnAction" prefHeight="34.0" prefWidth="145.0" style="-fx-background-color: #0097e6;" text="Search Customers">
          <font>
             <Font name="Ubuntu Mono" size="15.0" />

@@ -1,5 +1,6 @@
 package controller;
 
+import com.jfoenix.controls.JFXTextField;
 import db.DBConnection;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -31,7 +32,7 @@ public class ViewCustomerFormController {
 
     @FXML
     void btnExitOnAction(ActionEvent event) {
-
+        tblCustomers.getScene().getWindow().hide();
     }
 
     @FXML

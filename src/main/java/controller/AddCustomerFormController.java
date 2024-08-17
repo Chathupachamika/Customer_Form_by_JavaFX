@@ -71,6 +71,7 @@ public class AddCustomerFormController implements Initializable {
     }
 
     public void btnExitOnAction(ActionEvent actionEvent) {
+        cmbTitle.getScene().getWindow().hide();
     }
 
     public void btnSearchCustomerOnAction(ActionEvent actionEvent) {
